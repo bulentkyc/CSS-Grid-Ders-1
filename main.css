@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    grid-template-columns: [first] 40px [line2] 50px [line3] 2fr [col4-start] 3fr [five] 1fr [end];
+    
+    grid-template-rows: [first-grid-line] repeat(3, 20px [row-start]) repeat(3, 50px [row-start-new]);/* [row1-start] 25% [row1-end] 100px [third-line] auto [last-line]; */
+    
+}
+
+p{
+    margin:0;
+}
+
+.item-3{
+    height: 100%;
+    width: 100%;
+    grid-row-start: first-grid-line;
+    grid-column-start: line2;
+}
+
+
+.item-2{
+    grid-column-start: line3;
+}
